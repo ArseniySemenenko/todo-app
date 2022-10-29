@@ -17,6 +17,7 @@ function App() {
             id: Date.now(),
             title:title,
             body: body,
+            done:false,
         }
 
         setPosts([...posts , newItem]);
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="container max-w-2xl ml-auto mr-auto">
         <Form createPost={createItem}/>
-        <List del={deleteItem} posts={posts} title={"ToDo"}/>
+        <List del={deleteItem} posts={posts} title={"To Do"}/>
     </div>
   );
 }

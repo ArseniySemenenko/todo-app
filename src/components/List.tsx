@@ -5,8 +5,7 @@ import Item from "./Item";
 interface IProps{
     posts: IPost[],
     title:string,
-    del: (id:number) => void,
-}
+    del: (id:number) => void,}
 
 function List( {posts , title , del} : IProps) {
     return (
